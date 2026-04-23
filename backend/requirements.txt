@@ -1,0 +1,31 @@
+# APIFootball backend — tek bağımlılık listesi
+# Kurulum: cd backend && pip install -r requirements.txt
+
+# Web API
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.0.0
+
+# Veritabanı
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+
+# Redis (async kuyruk)
+redis>=5.0.0
+
+# HTTP istemcisi
+requests>=2.31.0
+
+# Ortam
+python-dotenv>=1.0.0
+
+# LLM (Gemini + LangChain)
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-google-genai>=1.0.0
+
+# RAG (ChromaDB, doküman yükleme, chunking)
+chromadb>=0.5.0
+langchain-community>=0.2.0
+langchain-text-splitters>=0.2.0
+pypdf>=4.0.0
